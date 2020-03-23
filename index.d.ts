@@ -3,5 +3,7 @@ export default interface TencentMap {
     mapKey: String;
     mapVer: String;
     mapApi: String,
-    load(elements: any, config: Object): Promise
+    load(elements: any, config: { mapKey: String, mapVer: String, mapApi: String }): Promise
+    load(elements: any, config: { mapKey: String, mapVer: String }): Promise
+    load(elements: any, config: { mapKey: String }): Promise
 }

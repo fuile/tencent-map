@@ -1,8 +1,16 @@
-# 腾讯地图 
+腾讯地图 
+--------
 - Support the VUE
 - It can be used on mobile phone or PC
 
-### VUE usage
+#### Usage
+1. npm i tencent-map -S
+2. import TencentMap from "tencent-map";
+3. TencentMap.load(elements: any, config: { mapKey: String, mapVer: String, mapApi: String }): Promise
+
+Example
+-------
+### VUE
 ```
 import TencentMap from "tencent-map";
 
