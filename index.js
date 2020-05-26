@@ -14,10 +14,10 @@ class TencentMap {
             throw new Error('DOM elements must define')
         }
         if (typeof config == 'object') {
-            if (config.mapApi) {
+            if (config.mapKey) {
                 this.mapKey = config.mapKey
             }
-            if (config.mapApi) {
+            if (config.mapVer) {
                 this.mapVer = config.mapVer
             }
             if (config.mapApi) {
